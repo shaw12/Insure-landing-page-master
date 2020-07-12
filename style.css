@@ -117,7 +117,7 @@ h1{
 }
 .line{
     width: 100px;
-    height: 5px;
+    height: 2px;
     background-color: hsl(216, 30%, 68%);
 }
 .different{
