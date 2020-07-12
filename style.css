@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+}
+body{
+    font-size: 16px !important;
+    font-family: 'Karla', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DM Serif Display', serif;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    z-index: 10000 !important;
+}
+.btn-trans{
+    margin-top: -1px;
+    border: 2px solid hsl(256, 26%, 20%);
+    color: hsl(256, 26%, 20%) !important;
+    font-weight: 700;
+    padding: 12px 30px;
+    margin-right: 0px !important;
+}
+/*Intro*/
+.intro{
+    display: flex;
+    background-color: hsl(256, 26%, 20%);
+    color: #fff;
+}
+.left{
+    position: absolute;
+    
+    left: 0%;
+    top: 58%;
+    z-index: 100 !important;
+}
+.limage{
+    width: 140px;
+}
+.content,image{
+    max-width: 100%;
+    width: 50%;
+}
+.content{
+    justify-content: center;
+    padding: 60px 10px 60px 120px;
+    max-height: 90vh !important;
+}
+h1{
+    font-size: 68px;
+    font-weight: 400;
+    max-width: 100%;
+    width: 90%;
+    line-height: 60px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+.content p{
+    opacity: 0.8;
+}
+.btn2{
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: hsl(256, 26%, 20%);
+    border: none;
+    border: 2px solid #fff;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*itro-img*/
+
+.right{
+    position: absolute;
+    width: auto;
+    right: 0% !important;
+    z-index: 100;
+}
+.rimage{
+    width: 450px;
+    height: 450px;
+    margin-top: -50px;
+}
+
+
+/*card*/
+.card-wala{
+    padding: 120px 100px 120px 120px;
+    padding-top: 250px;
+    z-index: -1;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.card{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.card-img{
+    max-width: 100%;
+    width: 75px;
+}
+.card h2{
+    padding: 20px 0px;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: hsl(216, 30%, 68%);
+}
+.different{
+    padding-bottom: 50px;
+}
+/*find*/
+.find-sec{
+    padding:20px 120px;
+}
+.find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(256, 26%, 20%);
+    padding: 10px 100px;
+    color: #fff;
+}
+.find h1{
+    font-size: 52px;
+    line-height: 44px;
+    padding-bottom: 45px;
+}
+.find-sec button{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px;
+    letter-spacing: 1px;
+    width: 200px;
+}
+
+/*footer*/
+footer{
+    padding: 59px 130px;
+    background: url('./images/bg-pattern-footer-desktop.svg') no-repeat;
+    background-color:  hsl(0, 0%, 98%);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid hsl(216, 30%, 68%);
+}
+.icons{
+    display: flex;
+    
+}
+.icons li{
+    padding: 10px 10px;
+}
+.addresses{
+    display: flex;
+}
+.xor{
+    max-width: 100%;
+    width: 25%;
+}
+.xor p{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    display: block;
+    text-transform: uppercase;
+    color: hsl(216, 30%, 68%);
+    font-weight: 700;
+}
+.xor ul li{
+    margin-top: 10px !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media only screen and (max-width: 768px){
+    .header,.addresses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .desk{
+        display: none;
+    }
+    nav{
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .nav-link{
+        min-width: 100%;
+        position: absolute;
+        left: 0%;
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+        
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+        min-height: 100vh !important;
+        padding-top: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        background: url("./images/bg-pattern-mobile-nav.svg") no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        background-color: hsl(270, 9%, 17%);
+        letter-spacing: 2px;
+    }
+
+    .links li{
+        padding: 20px 0px;
+    }
+    .btn-trans{
+        margin-top: 15px;
+        border: 1px solid #fff;
+        color: #fff !important;
+        width: 80%;
+    }
+    .intro{
+        padding: 0px !important;
+        margin: 0px !important;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .content,.image{
+        min-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .intro-img{
+        width: 100%;
+    }
+    .line{
+        width: 50%;
+        margin: auto;
+    }
+    .content{
+        background: url("./images/bg-pattern-intro-left-mobile.svg") no-repeat !important;
+        background-position: left top;
+       
+    }
+    .content .line{
+       display: none;
+    }
+    .content h1{
+        width: 90%;
+        padding:20px 0px;
+        padding-top: 100px;
+        margin: auto;
+        font-size: 48px;
+        line-height: 1;
+    }
+    .content p{
+        width: 80%;
+        margin: auto;
+        line-height: 1.6;
+    }
+    .btn2{
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .card-wala{
+        padding: 0;
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .different{
+        font-size: 44px;
+        text-align: center;
+    }
+    .cards{
+        flex-direction: column;
+        margin: auto;
+    }
+    .card{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    .card-img{
+        margin: auto;
+    }
+    .find-sec{
+        padding: 0%;
+        padding: 0px 20px;
+        margin-bottom: 80px;
+    }
+    .find{
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+        background: url("./images/bg-pattern-how-we-work-mobile.svg") no-repeat;
+        background-size: contain;
+        background-position: right;
+        background-color: hsl(256, 26%, 20%);
+    }
+    .find h1{
+        font-size: 40px;
+    }
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url("./images/bg-pattern-footer-mobile.svg");
+    }
+    .flogo{
+        padding: 20px 0px 30px;
+        margin: auto;
+    }
+    .icons{
+        padding: 0;
+        margin: 0;
+        margin: auto;
+
+    }
+    .xor{
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+        
+    }
+    .xor ul li{
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    nav{
+        padding: 30px 120px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10000 !important;
+    }
+    .links{
+        display: flex !important;
+    }
+    .ham-icon,.close-icon{
+        display: none;
+    }
+    .links li{
+        margin-right: 30px;
+        text-transform: uppercase;
+        color: hsl(216, 30%, 68%);
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-top: 12px;
+    }
+
+    .intro-img{
+        position: absolute;
+        padding-left: 20px;
+        margin-top: 100px;
+        width: 35%;
+        height: 75%;
+    }
+    .find{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('./images/bg-pattern-how-we-work-desktop.svg') no-repeat;
+        background-size: contain;
+        background-position: right;
+        background-color: hsl(256, 26%, 20%);
+        padding: 10px 100px;
+        color: #fff;
+    }
+    .btn-trans{
+        margin-top: 1px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    nav{
+        padding: 40px;
+    }
+    .links li{
+        padding-top: 5px;
+    }
+    .btn-trans{
+        margin-top: 0px;
+    }
+    .content{
+        padding: 60px 0px 60px 40px;
+    }
+    footer,
+    .find-sec,
+    .find{
+        padding: 40px 60px;
+    }
+    .image{
+        height: 80vh;
+        padding-left: 20px;
+    }
+    .intro-img{
+        max-height: auto;
+        height: 100;
+        width: 400px;
+        margin-top: 180px;
+        
+    }
+
+}
